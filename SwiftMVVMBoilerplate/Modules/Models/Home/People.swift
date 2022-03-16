@@ -11,4 +11,10 @@ struct People {
     var name : String
     var profileImage : String
     var description : String
+    
+    init(name: String = "", profileImage: String = "" , description : String = "") {
+        self.name = name
+        self.profileImage = profileImage
+        self.description = description
+    }
 }

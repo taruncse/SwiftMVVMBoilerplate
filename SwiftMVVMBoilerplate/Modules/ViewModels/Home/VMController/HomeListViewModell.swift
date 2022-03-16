@@ -13,6 +13,8 @@ class HomeListViewModel {
     
     var selectedObject: (People)->() = { _ in }
     
+    var shouldHideProgress = false
+    
     init(){
         self.getAppData() {
             self.prepareData()
@@ -20,13 +22,12 @@ class HomeListViewModel {
     }
     
     private func getAppData(completion : @escaping () -> ()){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 42.0) {
-            DataGenerator.getPeople { peopleList in
-                self.tableDataSource.value = peopleList.compactMap({
-                    HomeViewModel($0)
-                })
-                completion()
-            }
+        DataGenerator.getPeople { peopleList in
+            self.tableDataSource.value = peopleList.compactMap({
+                HomeViewModel($0)
+            })
+            self.shouldHideProgress = true
+            completion()
         }
     }
     

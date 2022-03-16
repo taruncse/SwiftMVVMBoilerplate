@@ -20,23 +20,21 @@ class HomeViewController: UIViewController {
     }
     
     private func configureTableView(){
+        ActivityIndicator.shared.showIndicator(onView: self.view)
         HomeUserCell.registerWithTable(self.homeTableView)
     }
     
     private func observeEvents(){
-        self.homeListViewModel.reloadTable = { [weak self] in
+        self.homeListViewModel.tableDataSource.bind { [weak self] _ in
             DispatchQueue.main.async {
                 self?.homeTableView.reloadData()
+                if self?.homeListViewModel.shouldHideProgress == true {
+                    ActivityIndicator.shared.dismissIndicator()
+                    self?.homeListViewModel.shouldHideProgress = false
+                }
             }
         }
     }
-    
-//    private func cellForHomeUser(indexPath: IndexPath, viewModel: PaginationCellVM)->PaginationCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: PaginationCell.reuseIdentifier, for: indexPath) as! PaginationCell
-//        cell.selectionStyle = .none
-//        cell.prepareCell(viewModel: viewModel)
-//        return cell
-//    }
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -46,10 +44,8 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       // return cellForHomeUser(indexPath: indexPath, viewModel: model)
         
         let homeViewModel = self.homeListViewModel.peopleAtIndex(indexPath.row)
-
         
         guard let cell = homeTableView.dequeueReusableCell(withIdentifier: HomeUserCell.reuseIdentifier, for: indexPath) as? HomeUserCell else {
             fatalError("ArticleTableViewCell not found")
