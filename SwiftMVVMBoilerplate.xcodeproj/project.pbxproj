@@ -26,6 +26,7 @@
 		4FD3CD4727DF8D7600681976 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4627DF8D7600681976 /* People.swift */; };
 		4FD3CD4A27DFA3EE00681976 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4927DFA3EE00681976 /* DataGenerator.swift */; };
 		4FD3CD4C27DFBA0B00681976 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4B27DFBA0A00681976 /* ActivityIndicator.swift */; };
+		4FD3CD4F27E10BFC00681976 /* Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4E27E10BFC00681976 /* Bind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4FD3CD4627DF8D7600681976 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		4FD3CD4927DFA3EE00681976 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		4FD3CD4B27DFBA0A00681976 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4FD3CD4E27E10BFC00681976 /* Bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		4F4250EB27DE5D0D00CF004C /* SwiftMVVMBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				4FD3CD4D27E10B8500681976 /* Binding */,
 				4FD3CD4827DFA3CE00681976 /* Extras */,
 				4F42512327DE739800CF004C /* Extensions */,
 				4F42511F27DE733100CF004C /* Modules */,
@@ -259,6 +262,14 @@
 				4FD3CD4B27DFBA0A00681976 /* ActivityIndicator.swift */,
 			);
 			path = Extras;
+			sourceTree = "<group>";
+		};
+		4FD3CD4D27E10B8500681976 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CD4E27E10BFC00681976 /* Bind.swift */,
+			);
+			path = Binding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +415,7 @@
 				4F4250ED27DE5D0D00CF004C /* AppDelegate.swift in Sources */,
 				4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */,
 				4F4250EF27DE5D0D00CF004C /* SceneDelegate.swift in Sources */,
+				4FD3CD4F27E10BFC00681976 /* Bind.swift in Sources */,
 				4FD3CD4A27DFA3EE00681976 /* DataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

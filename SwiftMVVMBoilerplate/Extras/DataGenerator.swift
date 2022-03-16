@@ -17,5 +17,4 @@ struct DataGenerator {
         }
         completion(peopleList)
     }
-    
 }

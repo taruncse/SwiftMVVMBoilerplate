@@ -9,22 +9,24 @@ import Foundation
 
 class HomeListViewModel {
     
-    private var tableDataSource : [People] = [People]()
+    var tableDataSource : Observable<[HomeViewModel]> = Observable([HomeViewModel]())
     
-    var reloadTable: ()->() = {}
     var selectedObject: (People)->() = { _ in }
     
     init(){
         self.getAppData() {
             self.prepareData()
-            self.reloadTable()
         }
     }
     
     private func getAppData(completion : @escaping () -> ()){
-        DataGenerator.getPeople { peopleList in
-            self.tableDataSource = peopleList
-            completion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 42.0) {
+            DataGenerator.getPeople { peopleList in
+                self.tableDataSource.value = peopleList.compactMap({
+                    HomeViewModel($0)
+                })
+                completion()
+            }
         }
     }
     
@@ -33,12 +35,14 @@ class HomeListViewModel {
     }
     
     func peopleAtIndex(_ index : Int) -> HomeViewModel {
-        let people = self.tableDataSource[index]
-        return HomeViewModel(people)
+        if let homeVC = self.tableDataSource.value?[index] {
+            return homeVC
+        }
+        return HomeViewModel(People())
     }
     
     func numberOfRowsInSection() -> Int{
-        return tableDataSource.count
+        return tableDataSource.value?.count ?? 0
     }
     
 }
