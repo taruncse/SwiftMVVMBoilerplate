@@ -15,17 +15,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.configureTableView()
+        self.configuration()
         self.observeEvents()
     }
     
-    private func configureTableView(){
+    private func configuration(){
+        self.title = homeListViewModel.title
         ActivityIndicator.shared.showIndicator(onView: self.view)
         HomeUserCell.registerWithTable(self.homeTableView)
     }
     
     private func observeEvents(){
-        self.homeListViewModel.tableDataSource.bind { [weak self] _ in
+        self.homeListViewModel.dataList.bind { [weak self] _ in
             DispatchQueue.main.async {
                 self?.homeTableView.reloadData()
                 if self?.homeListViewModel.shouldHideProgress == true {
@@ -45,7 +46,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let homeViewModel = self.homeListViewModel.peopleAtIndex(indexPath.row)
+        let homeViewModel = self.homeListViewModel.valueAtIndex(indexPath.row)
         
         guard let cell = homeTableView.dequeueReusableCell(withIdentifier: HomeUserCell.reuseIdentifier, for: indexPath) as? HomeUserCell else {
             fatalError("ArticleTableViewCell not found")

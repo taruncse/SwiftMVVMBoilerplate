@@ -7,23 +7,23 @@
 
 import Foundation
 
-class HomeListViewModel {
+class HomeListViewModel: ViewModelProtocol {
     
-    var tableDataSource : Observable<[HomeViewModel]> = Observable([HomeViewModel]())
+    var title: String = Constants.HOME_TITLE
     
-    var selectedObject: (People)->() = { _ in }
-    
+    var dataList : Observable<[HomeViewModel]> = Observable([HomeViewModel]())
+        
     var shouldHideProgress = false
     
     init(){
-        self.getAppData() {
+        self.getData() {
             self.prepareData()
         }
     }
     
-    private func getAppData(completion : @escaping () -> ()){
+    func getData(completion : @escaping () -> ()){
         DataGenerator.getPeople { peopleList in
-            self.tableDataSource.value = peopleList.compactMap({
+            self.dataList.value = peopleList.compactMap({
                 HomeViewModel($0)
             })
             self.shouldHideProgress = true
@@ -31,19 +31,19 @@ class HomeListViewModel {
         }
     }
     
-    private func prepareData(){
+    func prepareData(){
         
     }
     
-    func peopleAtIndex(_ index : Int) -> HomeViewModel {
-        if let homeVC = self.tableDataSource.value?[index] {
+    func valueAtIndex(_ index : Int) -> HomeViewModel {
+        if let homeVC = self.dataList.value?[index] {
             return homeVC
         }
         return HomeViewModel(People())
     }
     
     func numberOfRowsInSection() -> Int{
-        return tableDataSource.value?.count ?? 0
+        return dataList.value?.count ?? 0
     }
     
 }
@@ -65,4 +65,3 @@ struct HomeViewModel{
         return self.people.description
     }
 }
-
