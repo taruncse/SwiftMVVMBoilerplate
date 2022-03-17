@@ -29,6 +29,19 @@
 		4FD3CD4F27E10BFC00681976 /* Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4E27E10BFC00681976 /* Bind.swift */; };
 		4FD3CD5227E25D2400681976 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5127E25D2400681976 /* ViewModelProtocol.swift */; };
 		4FD3CD5627E267FA00681976 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5527E267FA00681976 /* Constants.swift */; };
+		4FD3CD5B27E3578400681976 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5927E3578400681976 /* FirstViewController.swift */; };
+		4FD3CD5C27E3578400681976 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5A27E3578400681976 /* FirstViewController.xib */; };
+		4FD3CD5F27E357B200681976 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5D27E357B200681976 /* SecondViewController.swift */; };
+		4FD3CD6027E357B200681976 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CD5E27E357B200681976 /* SecondViewController.xib */; };
+		4FD3CD6327E357D500681976 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6127E357D500681976 /* ThirdViewController.swift */; };
+		4FD3CD6427E357D500681976 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6227E357D500681976 /* ThirdViewController.xib */; };
+		4FD3CD6727E357E300681976 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6527E357E300681976 /* FourthViewController.swift */; };
+		4FD3CD6827E357E300681976 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6627E357E300681976 /* FourthViewController.xib */; };
+		4FD3CD6B27E357F300681976 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6927E357F300681976 /* FifthViewController.swift */; };
+		4FD3CD6C27E357F300681976 /* FifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6A27E357F300681976 /* FifthViewController.xib */; };
+		4FD3CD6E27E358C900681976 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD6D27E358C900681976 /* TabViewController.swift */; };
+		4FD3CD7227E3C1FF00681976 /* ExtUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD7127E3C1FF00681976 /* ExtUIColor.swift */; };
+		4FD3CD7427E3C22E00681976 /* ExtUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD7327E3C22E00681976 /* ExtUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +88,19 @@
 		4FD3CD4E27E10BFC00681976 /* Bind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bind.swift; sourceTree = "<group>"; };
 		4FD3CD5127E25D2400681976 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		4FD3CD5527E267FA00681976 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FD3CD5927E3578400681976 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4FD3CD5A27E3578400681976 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		4FD3CD5D27E357B200681976 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4FD3CD5E27E357B200681976 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		4FD3CD6127E357D500681976 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4FD3CD6227E357D500681976 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		4FD3CD6527E357E300681976 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		4FD3CD6627E357E300681976 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		4FD3CD6927E357F300681976 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		4FD3CD6A27E357F300681976 /* FifthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthViewController.xib; sourceTree = "<group>"; };
+		4FD3CD6D27E358C900681976 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4FD3CD7127E3C1FF00681976 /* ExtUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIColor.swift; sourceTree = "<group>"; };
+		4FD3CD7327E3C22E00681976 /* ExtUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +206,7 @@
 		4F42512127DE736400CF004C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FD3CD5727E356FC00681976 /* BottomTabBar */,
 				4F42512427DE749A00CF004C /* Home */,
 			);
 			path = Views;
@@ -196,7 +223,8 @@
 		4F42512327DE739800CF004C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */,
+				4FD3CD7027E3C1E000681976 /* Utilities */,
+				4FD3CD6F27E3C1D500681976 /* Views */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +312,49 @@
 				4FD3CD5127E25D2400681976 /* ViewModelProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4FD3CD5727E356FC00681976 /* BottomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CD5827E3571D00681976 /* Controllers */,
+			);
+			path = BottomTabBar;
+			sourceTree = "<group>";
+		};
+		4FD3CD5827E3571D00681976 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CD5927E3578400681976 /* FirstViewController.swift */,
+				4FD3CD5A27E3578400681976 /* FirstViewController.xib */,
+				4FD3CD5D27E357B200681976 /* SecondViewController.swift */,
+				4FD3CD5E27E357B200681976 /* SecondViewController.xib */,
+				4FD3CD6127E357D500681976 /* ThirdViewController.swift */,
+				4FD3CD6227E357D500681976 /* ThirdViewController.xib */,
+				4FD3CD6527E357E300681976 /* FourthViewController.swift */,
+				4FD3CD6627E357E300681976 /* FourthViewController.xib */,
+				4FD3CD6927E357F300681976 /* FifthViewController.swift */,
+				4FD3CD6A27E357F300681976 /* FifthViewController.xib */,
+				4FD3CD6D27E358C900681976 /* TabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4FD3CD6F27E3C1D500681976 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */,
+				4FD3CD7327E3C22E00681976 /* ExtUIViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FD3CD7027E3C1E000681976 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CD7127E3C1FF00681976 /* ExtUIColor.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,10 +461,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD3CD6C27E357F300681976 /* FifthViewController.xib in Resources */,
 				4F4250FC27DE5D0F00CF004C /* LaunchScreen.storyboard in Resources */,
+				4FD3CD6027E357B200681976 /* SecondViewController.xib in Resources */,
+				4FD3CD6427E357D500681976 /* ThirdViewController.xib in Resources */,
+				4FD3CD5C27E3578400681976 /* FirstViewController.xib in Resources */,
 				4F4250F927DE5D0F00CF004C /* Assets.xcassets in Resources */,
 				4F4250F427DE5D0D00CF004C /* Main.storyboard in Resources */,
 				4F42512E27DF252400CF004C /* HomeUserCell.xib in Resources */,
+				4FD3CD6827E357E300681976 /* FourthViewController.xib in Resources */,
 				4F42512A27DE77BE00CF004C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,17 +495,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD3CD6327E357D500681976 /* ThirdViewController.swift in Sources */,
+				4FD3CD5F27E357B200681976 /* SecondViewController.swift in Sources */,
+				4FD3CD5B27E3578400681976 /* FirstViewController.swift in Sources */,
 				4F42512927DE77BE00CF004C /* HomeViewController.swift in Sources */,
 				4F42512D27DF252400CF004C /* HomeUserCell.swift in Sources */,
 				4F4250F127DE5D0D00CF004C /* ViewController.swift in Sources */,
 				4FD3CD4427DF813700681976 /* HomeListViewModel.swift in Sources */,
+				4FD3CD6B27E357F300681976 /* FifthViewController.swift in Sources */,
+				4FD3CD6E27E358C900681976 /* TabViewController.swift in Sources */,
 				4FD3CD5227E25D2400681976 /* ViewModelProtocol.swift in Sources */,
 				4FD3CD4727DF8D7600681976 /* People.swift in Sources */,
+				4FD3CD7427E3C22E00681976 /* ExtUIViewController.swift in Sources */,
 				4FD3CD4C27DFBA0B00681976 /* ActivityIndicator.swift in Sources */,
 				4F4250F727DE5D0D00CF004C /* SwiftMVVMBoilerplate.xcdatamodeld in Sources */,
 				4F4250ED27DE5D0D00CF004C /* AppDelegate.swift in Sources */,
+				4FD3CD6727E357E300681976 /* FourthViewController.swift in Sources */,
 				4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */,
 				4F4250EF27DE5D0D00CF004C /* SceneDelegate.swift in Sources */,
+				4FD3CD7227E3C1FF00681976 /* ExtUIColor.swift in Sources */,
 				4FD3CD5627E267FA00681976 /* Constants.swift in Sources */,
 				4FD3CD4F27E10BFC00681976 /* Bind.swift in Sources */,
 				4FD3CD4A27DFA3EE00681976 /* DataGenerator.swift in Sources */,
