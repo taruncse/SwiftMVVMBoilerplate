@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     private func configuration(){
         self.title = homeListViewModel.title
         ActivityIndicator.shared.showIndicator(onView: self.view)
-        HomeUserCell.registerWithTable(self.homeTableView)
+        HomeUserCell.registerWithTableViewXib(self.homeTableView)
     }
     
     private func observeEvents(){

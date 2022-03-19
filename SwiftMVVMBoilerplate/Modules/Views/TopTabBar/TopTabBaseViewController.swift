@@ -19,8 +19,8 @@ class TopTabBaseViewController: UIViewController {
         openSelectedTab()
     }
     
-    let menuBar: TopMenuBar = {
-        let mb = TopMenuBar()
+    let topTabBar: TopTabBar = {
+        let mb = TopTabBar()
         return mb
     }()
     
@@ -41,15 +41,15 @@ class TopTabBaseViewController: UIViewController {
     
     private func setupMenuViews() {
         view.addSubview(containerView)
-        view.addSubview(menuBar)
+        view.addSubview(topTabBar)
 
         containerView.centerX(inView: self.view)
         containerView.setDimensions(width: self.view.frame.width, height: self.view.frame.height - 50)
-        containerView.anchor(top: menuBar.bottomAnchor, left: self.view.leftAnchor, bottom: self.view.bottomAnchor, right: self.view.rightAnchor)
+        containerView.anchor(top: topTabBar.bottomAnchor, left: self.view.leftAnchor, bottom: self.view.bottomAnchor, right: self.view.rightAnchor)
         
-        menuBar.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)
-        menuBar.setDimensions(width: self.view.frame.width, height: 50)
-        menuBar.didSelect = didSelect
+        topTabBar.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)
+        topTabBar.setDimensions(width: self.view.frame.width, height: 50)
+        topTabBar.didSelect = didSelect
     }
     
     private func openSelectedTab(selected : Int = 0){

@@ -13,9 +13,13 @@ open class ReusableTableViewCell: UITableViewCell {
         return "\(self.self)"
     }
     
-    public static func registerWithTable(_ table : UITableView){
+    public static func registerWithTableViewXib(_ table : UITableView){
         let bundle = Bundle(for: self)
         let nib = UINib(nibName: self.reuseIdentifier, bundle: bundle)
         table.register(nib, forCellReuseIdentifier: self.reuseIdentifier)
+    }
+    
+    public static func registerWithTableViewClass(_ table : UITableView) {
+        table.register(self, forCellReuseIdentifier: self.reuseIdentifier)
     }
 }
