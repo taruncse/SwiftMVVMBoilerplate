@@ -32,6 +32,7 @@
 		4FA52E4C27E5C92200464BC4 /* TopTabFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4A27E5C92200464BC4 /* TopTabFourthViewController.swift */; };
 		4FA52E4D27E5C92200464BC4 /* TopTabFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA52E4B27E5C92200464BC4 /* TopTabFourthViewController.xib */; };
 		4FA52E5027E5CA6900464BC4 /* TopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4F27E5CA6900464BC4 /* TopMenuBar.swift */; };
+		4FA52E5227E632B500464BC4 /* ReusableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E5127E632B500464BC4 /* ReusableCollectionViewCell.swift */; };
 		4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */; };
 		4FD3CD4427DF813700681976 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4327DF813700681976 /* HomeListViewModel.swift */; };
 		4FD3CD4727DF8D7600681976 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4627DF8D7600681976 /* People.swift */; };
@@ -102,6 +103,7 @@
 		4FA52E4A27E5C92200464BC4 /* TopTabFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabFourthViewController.swift; sourceTree = "<group>"; };
 		4FA52E4B27E5C92200464BC4 /* TopTabFourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabFourthViewController.xib; sourceTree = "<group>"; };
 		4FA52E4F27E5CA6900464BC4 /* TopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuBar.swift; sourceTree = "<group>"; };
+		4FA52E5127E632B500464BC4 /* ReusableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
 		4FD3CD4327DF813700681976 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		4FD3CD4627DF8D7600681976 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */,
 				4FD3CD7327E3C22E00681976 /* ExtUIViewController.swift */,
 				4FA52E3927E5C82100464BC4 /* ExtView.swift */,
+				4FA52E5127E632B500464BC4 /* ReusableCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				4FA52E4C27E5C92200464BC4 /* TopTabFourthViewController.swift in Sources */,
 				4F4250EF27DE5D0D00CF004C /* SceneDelegate.swift in Sources */,
 				4FA52E4427E5C8F400464BC4 /* TopTabSecondViewController.swift in Sources */,
+				4FA52E5227E632B500464BC4 /* ReusableCollectionViewCell.swift in Sources */,
 				4FD3CD7227E3C1FF00681976 /* ExtUIColor.swift in Sources */,
 				4FA52E3A27E5C82100464BC4 /* ExtView.swift in Sources */,
 				4FD3CD5627E267FA00681976 /* Constants.swift in Sources */,

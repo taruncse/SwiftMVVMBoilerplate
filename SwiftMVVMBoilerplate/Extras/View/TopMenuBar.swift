@@ -1,16 +1,8 @@
-//
-//  MenuBar.swift
-//  youtube
-//
-//  Created by Brian Voong on 6/6/16.
-//  Copyright © 2016 letsbuildthatapp. All rights reserved.
-//
+
 
 import UIKit
 
 class TopMenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-    
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

@@ -12,7 +12,7 @@ extension UIViewController {
     func decorateNavigationController() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.2)
+        appearance.backgroundColor = UIColor.red//UIColor(red: 1, green: 1, blue: 1, alpha: 0.2)
         //self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationBar.standardAppearance = appearance;
         self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance

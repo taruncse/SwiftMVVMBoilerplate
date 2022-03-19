@@ -41,10 +41,12 @@ class TopTabBaseViewController: UIViewController {
     
     private func setupMenuViews() {
         view.addSubview(containerView)
-        containerView.centerX(inView: self.view)
-        containerView.setDimensions(width: self.view.frame.width, height: self.view.frame.height)
-        
         view.addSubview(menuBar)
+
+        containerView.centerX(inView: self.view)
+        containerView.setDimensions(width: self.view.frame.width, height: self.view.frame.height - 50)
+        containerView.anchor(top: menuBar.bottomAnchor, left: self.view.leftAnchor, bottom: self.view.bottomAnchor, right: self.view.rightAnchor)
+        
         menuBar.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)
         menuBar.setDimensions(width: self.view.frame.width, height: 50)
         menuBar.didSelect = didSelect
@@ -53,11 +55,12 @@ class TopTabBaseViewController: UIViewController {
     private func openSelectedTab(selected : Int = 0){
         if let currentOperator: SelectedViewController = SelectedViewController(rawValue: selected){
             self.oldViewController = self.activeViewController
+            
             switch currentOperator {
             case .first:
                 self.activeViewController = TopTabFirstViewController()
             case .second:
-                self.activeViewController = TopTabSecondViewController()
+                self.activeViewController = HomeViewController()
             case .third:
                 self.activeViewController = TopTabThirdViewController()
             case .fourth:
