@@ -1,19 +1,18 @@
 //
-//  FifthViewController.swift
+//  TopTabFourthViewController.swift
 //  SwiftMVVMBoilerplate
 //
-//  Created by Tarun on 17/3/22.
+//  Created by Tarun on 19/3/22.
 //
 
 import UIKit
 
-class FifthViewController: UIViewController {
+class TopTabFourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Fifth"
-        self.view.backgroundColor = .brown
-        self.decorateNavigationController()
+        view.backgroundColor = .lightGray
+        // Do any additional setup after loading the view.
     }
 
 

@@ -21,6 +21,17 @@
 		4F42512A27DE77BE00CF004C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F42512827DE77BD00CF004C /* HomeViewController.xib */; };
 		4F42512D27DF252400CF004C /* HomeUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F42512B27DF252400CF004C /* HomeUserCell.swift */; };
 		4F42512E27DF252400CF004C /* HomeUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F42512C27DF252400CF004C /* HomeUserCell.xib */; };
+		4FA52E3A27E5C82100464BC4 /* ExtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E3927E5C82100464BC4 /* ExtView.swift */; };
+		4FA52E3D27E5C8AE00464BC4 /* TopTabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E3C27E5C8AE00464BC4 /* TopTabBaseViewController.swift */; };
+		4FA52E4027E5C8E200464BC4 /* TopTabFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E3E27E5C8E200464BC4 /* TopTabFirstViewController.swift */; };
+		4FA52E4127E5C8E200464BC4 /* TopTabFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA52E3F27E5C8E200464BC4 /* TopTabFirstViewController.xib */; };
+		4FA52E4427E5C8F400464BC4 /* TopTabSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4227E5C8F400464BC4 /* TopTabSecondViewController.swift */; };
+		4FA52E4527E5C8F400464BC4 /* TopTabSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA52E4327E5C8F400464BC4 /* TopTabSecondViewController.xib */; };
+		4FA52E4827E5C90E00464BC4 /* TopTabThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4627E5C90E00464BC4 /* TopTabThirdViewController.swift */; };
+		4FA52E4927E5C90E00464BC4 /* TopTabThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA52E4727E5C90E00464BC4 /* TopTabThirdViewController.xib */; };
+		4FA52E4C27E5C92200464BC4 /* TopTabFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4A27E5C92200464BC4 /* TopTabFourthViewController.swift */; };
+		4FA52E4D27E5C92200464BC4 /* TopTabFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA52E4B27E5C92200464BC4 /* TopTabFourthViewController.xib */; };
+		4FA52E5027E5CA6900464BC4 /* TopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4F27E5CA6900464BC4 /* TopMenuBar.swift */; };
 		4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */; };
 		4FD3CD4427DF813700681976 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4327DF813700681976 /* HomeListViewModel.swift */; };
 		4FD3CD4727DF8D7600681976 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4627DF8D7600681976 /* People.swift */; };
@@ -80,6 +91,17 @@
 		4F42512827DE77BD00CF004C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4F42512B27DF252400CF004C /* HomeUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUserCell.swift; sourceTree = "<group>"; };
 		4F42512C27DF252400CF004C /* HomeUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeUserCell.xib; sourceTree = "<group>"; };
+		4FA52E3927E5C82100464BC4 /* ExtView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtView.swift; sourceTree = "<group>"; };
+		4FA52E3C27E5C8AE00464BC4 /* TopTabBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBaseViewController.swift; sourceTree = "<group>"; };
+		4FA52E3E27E5C8E200464BC4 /* TopTabFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabFirstViewController.swift; sourceTree = "<group>"; };
+		4FA52E3F27E5C8E200464BC4 /* TopTabFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabFirstViewController.xib; sourceTree = "<group>"; };
+		4FA52E4227E5C8F400464BC4 /* TopTabSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabSecondViewController.swift; sourceTree = "<group>"; };
+		4FA52E4327E5C8F400464BC4 /* TopTabSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabSecondViewController.xib; sourceTree = "<group>"; };
+		4FA52E4627E5C90E00464BC4 /* TopTabThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabThirdViewController.swift; sourceTree = "<group>"; };
+		4FA52E4727E5C90E00464BC4 /* TopTabThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabThirdViewController.xib; sourceTree = "<group>"; };
+		4FA52E4A27E5C92200464BC4 /* TopTabFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabFourthViewController.swift; sourceTree = "<group>"; };
+		4FA52E4B27E5C92200464BC4 /* TopTabFourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopTabFourthViewController.xib; sourceTree = "<group>"; };
+		4FA52E4F27E5CA6900464BC4 /* TopMenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMenuBar.swift; sourceTree = "<group>"; };
 		4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
 		4FD3CD4327DF813700681976 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		4FD3CD4627DF8D7600681976 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -206,6 +228,7 @@
 		4F42512127DE736400CF004C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FA52E3B27E5C87D00464BC4 /* TopTabBar */,
 				4FD3CD5727E356FC00681976 /* BottomTabBar */,
 				4F42512427DE749A00CF004C /* Home */,
 			);
@@ -256,6 +279,30 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		4FA52E3B27E5C87D00464BC4 /* TopTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4FA52E3C27E5C8AE00464BC4 /* TopTabBaseViewController.swift */,
+				4FA52E3E27E5C8E200464BC4 /* TopTabFirstViewController.swift */,
+				4FA52E3F27E5C8E200464BC4 /* TopTabFirstViewController.xib */,
+				4FA52E4227E5C8F400464BC4 /* TopTabSecondViewController.swift */,
+				4FA52E4327E5C8F400464BC4 /* TopTabSecondViewController.xib */,
+				4FA52E4627E5C90E00464BC4 /* TopTabThirdViewController.swift */,
+				4FA52E4727E5C90E00464BC4 /* TopTabThirdViewController.xib */,
+				4FA52E4A27E5C92200464BC4 /* TopTabFourthViewController.swift */,
+				4FA52E4B27E5C92200464BC4 /* TopTabFourthViewController.xib */,
+			);
+			path = TopTabBar;
+			sourceTree = "<group>";
+		};
+		4FA52E4E27E5CA5D00464BC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA52E4F27E5CA6900464BC4 /* TopMenuBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4FD3CD4027DF80F200681976 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +338,7 @@
 		4FD3CD4827DFA3CE00681976 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				4FA52E4E27E5CA5D00464BC4 /* View */,
 				4FD3CD4927DFA3EE00681976 /* DataGenerator.swift */,
 				4FD3CD4B27DFBA0A00681976 /* ActivityIndicator.swift */,
 				4FD3CD5527E267FA00681976 /* Constants.swift */,
@@ -345,6 +393,7 @@
 			children = (
 				4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */,
 				4FD3CD7327E3C22E00681976 /* ExtUIViewController.swift */,
+				4FA52E3927E5C82100464BC4 /* ExtView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,8 +510,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA52E4527E5C8F400464BC4 /* TopTabSecondViewController.xib in Resources */,
+				4FA52E4927E5C90E00464BC4 /* TopTabThirdViewController.xib in Resources */,
 				4FD3CD6C27E357F300681976 /* FifthViewController.xib in Resources */,
 				4F4250FC27DE5D0F00CF004C /* LaunchScreen.storyboard in Resources */,
+				4FA52E4D27E5C92200464BC4 /* TopTabFourthViewController.xib in Resources */,
 				4FD3CD6027E357B200681976 /* SecondViewController.xib in Resources */,
 				4FD3CD6427E357D500681976 /* ThirdViewController.xib in Resources */,
 				4FD3CD5C27E3578400681976 /* FirstViewController.xib in Resources */,
@@ -470,6 +522,7 @@
 				4F4250F427DE5D0D00CF004C /* Main.storyboard in Resources */,
 				4F42512E27DF252400CF004C /* HomeUserCell.xib in Resources */,
 				4FD3CD6827E357E300681976 /* FourthViewController.xib in Resources */,
+				4FA52E4127E5C8E200464BC4 /* TopTabFirstViewController.xib in Resources */,
 				4F42512A27DE77BE00CF004C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD3CD6327E357D500681976 /* ThirdViewController.swift in Sources */,
+				4FA52E5027E5CA6900464BC4 /* TopMenuBar.swift in Sources */,
 				4FD3CD5F27E357B200681976 /* SecondViewController.swift in Sources */,
 				4FD3CD5B27E3578400681976 /* FirstViewController.swift in Sources */,
 				4F42512927DE77BE00CF004C /* HomeViewController.swift in Sources */,
@@ -508,12 +562,18 @@
 				4FD3CD4727DF8D7600681976 /* People.swift in Sources */,
 				4FD3CD7427E3C22E00681976 /* ExtUIViewController.swift in Sources */,
 				4FD3CD4C27DFBA0B00681976 /* ActivityIndicator.swift in Sources */,
+				4FA52E3D27E5C8AE00464BC4 /* TopTabBaseViewController.swift in Sources */,
 				4F4250F727DE5D0D00CF004C /* SwiftMVVMBoilerplate.xcdatamodeld in Sources */,
+				4FA52E4827E5C90E00464BC4 /* TopTabThirdViewController.swift in Sources */,
+				4FA52E4027E5C8E200464BC4 /* TopTabFirstViewController.swift in Sources */,
 				4F4250ED27DE5D0D00CF004C /* AppDelegate.swift in Sources */,
 				4FD3CD6727E357E300681976 /* FourthViewController.swift in Sources */,
 				4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */,
+				4FA52E4C27E5C92200464BC4 /* TopTabFourthViewController.swift in Sources */,
 				4F4250EF27DE5D0D00CF004C /* SceneDelegate.swift in Sources */,
+				4FA52E4427E5C8F400464BC4 /* TopTabSecondViewController.swift in Sources */,
 				4FD3CD7227E3C1FF00681976 /* ExtUIColor.swift in Sources */,
+				4FA52E3A27E5C82100464BC4 /* ExtView.swift in Sources */,
 				4FD3CD5627E267FA00681976 /* Constants.swift in Sources */,
 				4FD3CD4F27E10BFC00681976 /* Bind.swift in Sources */,
 				4FD3CD4A27DFA3EE00681976 /* DataGenerator.swift in Sources */,
@@ -703,6 +763,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -732,6 +793,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

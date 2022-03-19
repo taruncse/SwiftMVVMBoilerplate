@@ -2,7 +2,7 @@
 //  TabViewController.swift
 //  SwiftMVVMBoilerplate
 //
-//  Created by DreamOnline on 17/3/22.
+//  Created by Tarun on 17/3/22.
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class TabViewController: UIViewController {
         let secondVC = UINavigationController(rootViewController: SecondViewController())
         secondVC.title = "Second"
         
-        let thirdVC = UINavigationController(rootViewController: ThirdViewController())
+        let thirdVC = UINavigationController(rootViewController: TopTabBaseViewController())
         thirdVC.title = "Third"
 
         let fourthVC = UINavigationController(rootViewController: FourthViewController())
