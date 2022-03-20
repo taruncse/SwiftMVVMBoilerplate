@@ -34,6 +34,8 @@
 		4FA52E5027E5CA6900464BC4 /* TopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E4F27E5CA6900464BC4 /* TopTabBar.swift */; };
 		4FA52E5227E632B500464BC4 /* ReusableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA52E5127E632B500464BC4 /* ReusableCollectionViewCell.swift */; };
 		4FCE479C27E66EEE005A8072 /* TopTabItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE479B27E66EEE005A8072 /* TopTabItemCell.swift */; };
+		4FCE47A227E779E7005A8072 /* SideDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE47A027E779E7005A8072 /* SideDrawerViewController.swift */; };
+		4FCE47A327E779E7005A8072 /* SideDrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCE47A127E779E7005A8072 /* SideDrawerViewController.xib */; };
 		4FD3CD3F27DF471300681976 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */; };
 		4FD3CD4427DF813700681976 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4327DF813700681976 /* HomeListViewModel.swift */; };
 		4FD3CD4727DF8D7600681976 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CD4627DF8D7600681976 /* People.swift */; };
@@ -106,6 +108,8 @@
 		4FA52E4F27E5CA6900464BC4 /* TopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTabBar.swift; sourceTree = "<group>"; };
 		4FA52E5127E632B500464BC4 /* ReusableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FCE479B27E66EEE005A8072 /* TopTabItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabItemCell.swift; sourceTree = "<group>"; };
+		4FCE47A027E779E7005A8072 /* SideDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDrawerViewController.swift; sourceTree = "<group>"; };
+		4FCE47A127E779E7005A8072 /* SideDrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideDrawerViewController.xib; sourceTree = "<group>"; };
 		4FD3CD3E27DF471300681976 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
 		4FD3CD4327DF813700681976 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		4FD3CD4627DF8D7600681976 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 		4F42512127DE736400CF004C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FCE479D27E77990005A8072 /* NavigationDrawer */,
 				4FA52E3B27E5C87D00464BC4 /* TopTabBar */,
 				4FD3CD5727E356FC00681976 /* BottomTabBar */,
 				4F42512427DE749A00CF004C /* Home */,
@@ -306,6 +311,15 @@
 				4FCE479B27E66EEE005A8072 /* TopTabItemCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4FCE479D27E77990005A8072 /* NavigationDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				4FCE47A027E779E7005A8072 /* SideDrawerViewController.swift */,
+				4FCE47A127E779E7005A8072 /* SideDrawerViewController.xib */,
+			);
+			path = NavigationDrawer;
 			sourceTree = "<group>";
 		};
 		4FD3CD4027DF80F200681976 /* Home */ = {
@@ -520,6 +534,7 @@
 				4FA52E4927E5C90E00464BC4 /* TopTabThirdViewController.xib in Resources */,
 				4FD3CD6C27E357F300681976 /* FifthViewController.xib in Resources */,
 				4F4250FC27DE5D0F00CF004C /* LaunchScreen.storyboard in Resources */,
+				4FCE47A327E779E7005A8072 /* SideDrawerViewController.xib in Resources */,
 				4FA52E4D27E5C92200464BC4 /* TopTabFourthViewController.xib in Resources */,
 				4FD3CD6027E357B200681976 /* SecondViewController.xib in Resources */,
 				4FD3CD6427E357D500681976 /* ThirdViewController.xib in Resources */,
@@ -556,6 +571,7 @@
 			files = (
 				4FD3CD6327E357D500681976 /* ThirdViewController.swift in Sources */,
 				4FA52E5027E5CA6900464BC4 /* TopTabBar.swift in Sources */,
+				4FCE47A227E779E7005A8072 /* SideDrawerViewController.swift in Sources */,
 				4FD3CD5F27E357B200681976 /* SecondViewController.swift in Sources */,
 				4FD3CD5B27E3578400681976 /* FirstViewController.swift in Sources */,
 				4F42512927DE77BE00CF004C /* HomeViewController.swift in Sources */,
