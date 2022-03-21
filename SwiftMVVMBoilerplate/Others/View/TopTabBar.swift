@@ -21,7 +21,6 @@ class TopTabBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, U
     }()
     
     var didSelect: (_ collectionView: UICollectionView, _ indexPath: IndexPath) -> () = { _,_ in }
-    
     let imageNames = ["home", "trending", "subscriptions", "account"]
     
     override init(frame: CGRect) {

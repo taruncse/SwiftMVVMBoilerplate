@@ -19,7 +19,7 @@ class TopTabBaseViewController: UIViewController {
         openSelectedTab()
     }
     
-    let topTabBar: TopTabBar = {
+    lazy var topTabBar: TopTabBar = {
         let mb = TopTabBar()
         return mb
     }()
