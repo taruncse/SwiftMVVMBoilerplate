@@ -8,15 +8,15 @@
 import UIKit
 
 class SideDrawer: UIView {
-
-    var menuShowing = true
+    
+    var menuShowing = false
     var drawerClosed : () -> () = {}
     var drawerWillClose : () -> () = {}
     var drawerOpened : () -> () = {}
     
     lazy var backButton : UIButton = {
         let button = UIButton()
-        button.setDimensions(width: 32, height: 32)
+        button.setDimensions(width: 40, height: 40)
         button.tintColor = .white
         button.backgroundColor = nil
         button.setBackgroundImage(UIImage(named: "back"), for: .normal)
@@ -25,7 +25,7 @@ class SideDrawer: UIView {
     }()
     
     lazy var tableView : UITableView = {
-       let tv = UITableView()
+        let tv = UITableView()
         tv.backgroundColor = .white
         tv.dataSource = self
         tv.delegate = self
@@ -44,6 +44,7 @@ class SideDrawer: UIView {
     
     
     func showOrHideMenu() {
+        
         if (menuShowing) {
             UIView.animate(withDuration: TimeInterval(CGFloat(0.5)),
                            animations: {[weak self]() -> Void in
@@ -68,8 +69,8 @@ class SideDrawer: UIView {
         self.addSubview(tableView)
         self.addSubview(backButton)
         backButton.anchor(top: topAnchor, right: rightAnchor)
-        tableView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingRight: 0)
-    
+        tableView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 20)
+        
         SideDrawerItemCell.registerWithTableViewXib(self.tableView)
         
     }
@@ -77,7 +78,7 @@ class SideDrawer: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
 
 extension SideDrawer : UITableViewDataSource, UITableViewDelegate {
@@ -98,6 +99,9 @@ extension SideDrawer : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0{
+            return SideMenuTopHeaderView()
+        }else {
             let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
             
             let label = UILabel()
@@ -107,19 +111,24 @@ extension SideDrawer : UITableViewDataSource, UITableViewDelegate {
             label.textColor = .black
             
             headerView.addSubview(label)
-            
             return headerView
         }
+        
+    }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    
+        func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+            if section == 0 {
+                return 200
+            }
             return 30
         }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        func numberOfSections(in tableView: UITableView) -> Int {
+            return 3
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("Cell Clicked Section : \(indexPath.section) Row: \(indexPath.row)")
+            showOrHideMenu()
+        }
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Cell Clicked Section : \(indexPath.section) Row: \(indexPath.row)")
-        showOrHideMenu()
-    }
-}

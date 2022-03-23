@@ -30,7 +30,7 @@ class SideDrawerViewController: UIViewController {
     func setupDrawer() {
         
         self.navigationController?.view.addSubview(sideDrawer)
-        sideDrawer.anchor(top: self.navigationController?.view.topAnchor, left: self.navigationController?.view.leftAnchor, bottom: self.navigationController?.view.bottomAnchor, right: self.navigationController?.view.rightAnchor, paddingTop: 35, paddingLeft: 0, paddingRight: 100 )
+        sideDrawer.anchor(top: self.navigationController?.view.topAnchor, left: self.navigationController?.view.leftAnchor, bottom: self.navigationController?.view.bottomAnchor, right: self.navigationController?.view.rightAnchor, paddingTop: 35, paddingLeft: -self.view.frame.width + 100, paddingRight: self.view.frame.width, width: self.view.frame.width - 100)
     }
     
     @objc func drawerOpen() {
