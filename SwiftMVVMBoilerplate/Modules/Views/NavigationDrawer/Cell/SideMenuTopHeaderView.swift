@@ -10,14 +10,13 @@ import UIKit
 class SideMenuTopHeaderView: UIView {
     
     let imgView: UIImageView = {
-        let iv = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        iv.image = UIImage(named: "profile")?.withRenderingMode(.alwaysTemplate)
-        iv.tintColor = UIColor.rgb(red: 91, green: 14, blue: 13)
-        iv.layer.borderWidth = 1
+        let iv = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         iv.layer.masksToBounds = false
         iv.layer.borderColor = UIColor.black.cgColor
-        iv.layer.cornerRadius = 50
         iv.clipsToBounds = true
+        iv.layer.borderWidth = 2
+        iv.layer.cornerRadius = iv.frame.size.width / 2
+        iv.image = UIImage(named: "profile")
         return iv
     }()
     
@@ -42,9 +41,8 @@ class SideMenuTopHeaderView: UIView {
         self.addSubview(imgView)
         self.addSubview(nameLabel)
         
-        imgView.anchor(left: leftAnchor, bottom: bottomAnchor, paddingLeft: 40, paddingBottom: 80)
+        imgView.anchor(left: leftAnchor, bottom: bottomAnchor, paddingLeft: 40, paddingBottom: 60)
         nameLabel.anchor(top: imgView.bottomAnchor, left: leftAnchor,paddingTop: 20 , paddingLeft: 40)
-
     }
 
 }

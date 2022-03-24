@@ -31,7 +31,7 @@ class SideDrawer: UIView {
         tv.delegate = self
         return tv
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupDrawer()
@@ -65,6 +65,7 @@ class SideDrawer: UIView {
         menuShowing.toggle()
     }
     func setupDrawer() {
+        
         self.backgroundColor = .white
         self.addSubview(tableView)
         self.addSubview(backButton)
@@ -88,7 +89,7 @@ extension SideDrawer : UITableViewDataSource, UITableViewDelegate {
         }else if section == 1 {
             return 5
         } else if section == 2 {
-            return 2
+            return 10
         }
         return 0
     }
@@ -119,7 +120,7 @@ extension SideDrawer : UITableViewDataSource, UITableViewDelegate {
     
         func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
             if section == 0 {
-                return 200
+                return 180
             }
             return 30
         }
